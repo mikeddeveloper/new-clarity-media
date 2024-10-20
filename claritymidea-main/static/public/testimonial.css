@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Heading Styling */
+.section-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2C3E50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: -webkit-linear-gradient(45deg, #1ABC9C, #3498DB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background-color: #3498DB;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #7F8C8D;
+    line-height: 1.6;
+}
+
+.testimonial-card h5 {
+    color: #2C3E50;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #3498DB;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove Carousel Indicators */
+.carousel-indicators {
+    display: none;
+}

@@ -1,0 +1,82 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Card Styling */
+.card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2C3E50;
+    margin-top: 10px;
+}
+
+.form-subtitle {
+    font-size: 1rem;
+    color: #7F8C8D;
+    margin-bottom: 30px;
+}
+
+/* Icon Styling */
+.camera-icon {
+    font-size: 4rem;
+    color: #3498DB;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.form-label {
+    font-weight: 500;
+    color: #2C3E50;
+}
+
+.form-control, .form-select {
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    font-size: 1rem;
+    background-color: #f7f8fc;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: #3498DB;
+    background-color: #fff;
+}
+
+.form-control::placeholder, .form-select::placeholder {
+    color: #B0BEC5;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    background-color: #3498DB;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1ABC9C;
+    transform: translateY(-2px);
+}
+
+/* Responsive Rounded Custom Card */
+.rounded-custom {
+    border-radius: 30px;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity Studio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/public/testimonial.css">
+    <link rel="stylesheet" href="../static/public/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/public/style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+       <img src="../static/public/image/claritylogo.jpg"alt="cool" height="30px" width="70px">
+        Clarity Studio
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Video Background Section -->
+<div class="video-background">
+    <video autoplay loop muted>
+        <source src="../static/public/video/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <h1>Unleash Creativity with Clarity Studio</h1>
+        <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+    </div>
+</div>
+
+<section class="about-us py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="../static/public/image/about.jpg" alt="About Us Image" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2 class="font-weight-bold underline">About Us</h2>
+                <p class="small">At Clarity Studio, we believe in the power of storytelling. Founded by a team of passionate media professionals, we specialize in creating compelling visual content that resonates with audiences. Our mission is to transform ideas into engaging narratives that elevate brands and connect with people on a deeper level.
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mt-5">
+    <h2 class="text-center mb-4 section-heading">What Our Clients Say</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card shadow testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text">"The video quality and storytelling were beyond my expectations. They captured every important moment beautifully. I highly recommend their services!"</p>
+                                <h5 class="card-title text-end">- Sarah Johnson</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card shadow testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text">"Working with them was seamless. Their professionalism and creative vision made our project stand out. We couldn't be happier!"</p>
+                                <h5 class="card-title text-end">- Michael Thompson</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card shadow testimonial-card">
+                            <div class="card-body">
+                                <p class="card-text">"Their attention to detail and ability to capture the essence of our event was remarkable. We'll definitely hire them again for future projects."</p>
+                                <h5 class="card-title text-end">- Emily Roberts</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <!-- Start Your Cinematic Journey Section -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg p-5 rounded-custom">
+                <div class="text-center">
+                    <i class="bi bi-camera2 camera-icon"></i>
+                    <h2 class="form-title">Start Your Cinematic Journey</h2>
+                    <p class="form-subtitle">Let’s craft something beautiful. Fill in the details below and we’ll get back to you soon.</p>
+                </div>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="event" class="form-label">Event Type</label>
+                        <select class="form-select" id="event" required>
+                            <option selected disabled>Select your event type</option>
+                            <option value="Wedding">Wedding</option>
+                            <option value="Corporate Event">Corporate Event</option>
+                            <option value="Birthday Party">Birthday Party</option>
+                            <option value="Music Video">Music Video</option>
+                            <option value="Documentary">Documentary</option>
+                            <option value="Product Launch">Product Launch</option>
+                            <option value="Sports Event">Sports Event</option>
+                            <option value="Conference">Conference</option>
+                            <option value="Fashion Show">Fashion Show</option>
+                            <option value="Graduation">Graduation</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mt-4 submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="loading" class="loading" style="display: none;">
+    <div class="spinner"></div>
+</div>
+<!-- Your existing footer, scripts, etc. -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        document.getElementById('loading').style.display = 'flex';
+
+        const formData = {
+            name: document.getElementById('name').value,
+            phone: document.getElementById('phone').value,
+            email: document.getElementById('email').value,
+            event: document.getElementById('event').value,
+        };
+        
+
+        fetch('/send_email', {  // Adjusted the endpoint to your Flask route
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById('loading').style.display = 'none';
+                alert('Your message has been sent!');
+                document.getElementById('contact-form').reset(); // Reset the form
+            } else {
+                alert('There was an error sending your message.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error sending your message.');
+        });
+    });
+</script>
+</body>
+</html>

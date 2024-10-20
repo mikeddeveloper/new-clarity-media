@@ -1,0 +1,135 @@
+/* Custom styles */
+.video-background {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.learn-more-btn {
+    margin-top: 20px;
+}
+.navbar-brand i {
+    margin-right: 8px; /* Add space between the icon and text */
+    font-size: 1.5em; /* Adjust icon size */
+}
+h1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-us {
+    background-color: #f8f3e0; /* Creamy background */
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.text h2 {
+    font-weight: bold; /* Bold title */
+    font-size: 1.5em; /* Adjust size as needed */
+}
+
+.text p {
+    font-size: 0.9em; /* Smaller text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .text {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+.about-us {
+    background-color: white; /* White background */
+}
+
+.about-us h2 {
+    font-size: 2em; /* Bold title size */
+    position: relative; /* For the underline effect */
+}
+
+.about-us h2:after {
+    content: "";
+    display: block;
+    height: 3px; /* Thickness of the underline */
+    width: 50%; /* Width of the underline */
+    background-color: #007bff; /* Adjust this color to match your design */
+    margin-top: 5px; /* Space between text and underline */
+}
+
+.about-us p {
+    font-size: 0.9em; /* Smaller text */
+}
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
